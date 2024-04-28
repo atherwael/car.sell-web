@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>buy car</title>
+</head>
+<body>
+<div class="menu">
+<ul>
+<li><a class="m" href="h.html">Home</a></li>
+<li><a class="m" href="">buy</a></li>
+<li><a class="m" href="">sell</a></li>
+<li><a class="m" href="l.html">sign_in/signup</a></li>
+</ul>
+</div>
+<div class="x" bg="">
+    <img  id="myImage" src="b/be1.jpg" alt="">
+    <button onclick="changeImage()">></button>
+    <h1 class="one">Bentley</h1>
+    <p class="two">
+      <b>details:</b><br>
+      Car: Bentley Flying Spur W12<br>
+      Model: 2021<br>
+      Vehicle condition: accident-free<br>
+      Mileage: 21,816 Km<br>
+      Category: sedan<br>
+      Ingine: w12 6.0L<br>
+      Horsepower: 626HP<br>
+      Aspiration: twin turbo<br>
+      Torque: 590Nm<br>
+      Fuel type: gasoline<br>
+      Top speed: 200mph<br>
+      Accelration(0-100): 3.1s 
+      <br>
+      <br>
+      <span id="dis">
+        <b>description:</b><br>
+        Bi-xenon headlights with washers were factory-fitted along with 
+        LED taillights, fog lights, a powered glass <br> sunroof, front and rear Park Distance Control sensors <br>
+        heated power-folding mirrors,rain-sensing <br> windshield wipers, and dual exhaust  
+        outlets exiting through the rear fascia, price:52K$ 
+    </p>
+</div>
+<style>
+    *
+    {
+      margin: 0%;
+      padding: 0%;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    body
+    {
+      background-color: #000000;
+    }
+    .menu
+    {
+      background-color: #9b9b9b;
+      width: 98%;
+      height: 45px;
+      border-radius: 12px;
+      align-self: center;
+      justify-content: center;
+      margin:0.5% 0% 0% 1%;
+      position:sticky;
+      top: 5px;
+      z-index: 2;
+    }
+     .m
+    {
+     color:rgb(0, 0, 0);
+     text-decoration: none;
+     font-family: Arial, Helvetica, sans-serif;
+     position: absolute;
+     margin-top: 15px;
+    }
+    .m:hover
+    {
+     color:whitesmoke;
+    }
+    .menu ul li
+    {
+     list-style: none;
+     display: inline;
+     margin: 12%;
+    }
+    img
+    {
+        border-radius: 15px;
+        position: relative;
+        height: 670px;
+        width: 860px;
+        object-fit: cover;
+        display: inline-block;
+        border-top-right-radius:0 ;
+        border-bottom-right-radius: 0;
+
+    }
+    .x
+    {
+       width: 1450px;
+       height: 670px;
+       margin: 0.5%0%0%2.8%;
+       border-radius: 15px;
+       background-color: #695555;
+    }
+    button
+    {
+      position: absolute;
+      height: 50px;
+      width: 50px;
+      margin-top: 20%;
+      margin-left: -3.4%;
+      font-size: 32px;
+      font-weight: 700;
+      color: #0000008a;
+      border-radius: 50%;
+      border: 2px solid #00000000;
+      background-color: #0000004a;
+    }
+    .one
+    {
+      position: absolute;
+      display: inline;
+      color: antiquewhite;
+      font-size:45px;
+      font-weight: 700;
+      margin: 0%0%0.5%13.5%;
+    }
+    .two
+    {
+      position: absolute;
+      display: inline;
+      color: antiquewhite;
+      font-size:25px;
+      font-weight: 400;
+      margin: 3%0%0.5%1%;
+    }
+    b
+    {
+      color: #000000;
+    }
+
+
+</style>
+<script>
+  function changeImage() {
+    var image = document.getElementById('myImage');
+    if (image.src.match("b/be1.jpg")) 
+    {
+      image.src = "b/be2.jpg";
+    } 
+    else if (image.src.match("b/be2.jpg")) 
+    {
+      image.src = "b/be3.jpg";
+      
+    } 
+    else if (image.src.match("b/be3.jpg")) 
+    {
+      image.src = "b/be4.jpg";
+      
+    } 
+    else if (image.src.match("b/be4.jpg")) 
+    {
+      image.src = "b/be5.jpg";
+      
+    }
+    else if (image.src.match("b/be5.jpg")) 
+    {
+      image.src = "b/be6.jpg";
+      
+    } 
+    else if (image.src.match("b/be6.jpg")) 
+    {
+      image.src = "b/be7.jpg";
+      
+    } 
+    else if (image.src.match("b/be7.jpg")) 
+    {
+      image.src = "b/be8.jpg";
+      
+    } 
+    else if (image.src.match("b/be8.jpg")) 
+    {
+      image.src = "b/be9.jpg";
+      
+    } 
+    else if (image.src.match("b/be9.jpg")) 
+    {
+      image.src = "b/be10.jpg";
+      
+    } 
+    else 
+    {
+      image.src = "b/be1.jpg";
+    }
+  }
+</script>
+    </body>
+    </html>

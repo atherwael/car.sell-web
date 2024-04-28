@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>buy car</title>
+</head>
+
+<body>
+<div class="menu">
+<ul>
+<li><a class="m" href="h.html">Home</a></li>
+<li><a class="m" href="">buy</a></li>
+<li><a class="m" href="">sell</a></li>
+<li><a class="m" href="l.html">sign_in/signup</a></li>
+</ul>
+</div>
+
+<a href="car1.html">
+  <div class="car">
+    <div class="card">
+        <div class="poster">
+          <img src="60/605.jpg" alt="poster">
+        </div>
+          <div class="details">
+            <h1>Bmw E60</h1>
+            <h2>
+              Car: bmw m5<br>
+              Model: 2006<br>
+              Vehicle condition: accident-free<br>
+              Mileage: 146,682km<br>
+              Category: sedan
+            </h2>
+          </div>
+    </div>
+  </div>
+</a>
+
+<a href="car2.html">
+  <div class="car">
+    <div class="card">
+        <div class="poster">
+          <img src="b/be1.jpg" alt="poster">
+        </div>
+          <div class="details">
+            <h1>Bentley</h1>
+            <h2>
+              Car: Bentley Flying Spur W12<br>
+              Model: 2021<br>
+              Vehicle condition: accident-free<br>
+              Mileage: 21,816 Km<br>
+              Category: sedan
+            </h2>
+          </div>
+    </div>
+  </div>
+</a>
+
+<a href="">
+  <div class="car">
+    <div class="card">
+        <div class="poster">
+          <img src="39.jpg" alt="poster">
+        </div>
+          <div class="details">
+  
+          </div>
+    </div>
+  </div>
+</a>
+
+<a href="">
+  <div class="car">
+    <div class="card">
+        <div class="poster">
+          <img src="39.jpg" alt="poster">
+        </div>
+          <div class="details">
+  
+          </div>
+    </div>
+  </div>
+</a>
+
+<a href="">
+  <div class="car">
+    <div class="card">
+        <div class="poster">
+          <img src="39.jpg" alt="poster">
+        </div>
+          <div class="details">
+  
+          </div>
+    </div>
+  </div>
+</a>
+
+<a href="">
+  <div class="car">
+    <div class="card">
+        <div class="poster">
+          <img src="39.jpg" alt="poster">
+        </div>
+          <div class="details">
+  
+          </div>
+    </div>
+  </div>
+</a>
+
+<style>
+*
+{
+  margin: 0%;
+  padding: 0%;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body
+{
+    background-color: #000000;
+}
+.menu
+{
+    background-color: #9b9b9b;
+    width: 98%;
+    height: 45px;
+    border-radius: 12px;
+    margin:0.5% 0% 0% 1%;
+    position:sticky;
+    top: 5px;
+    z-index: 2;
+}
+ .m
+{
+  color:rgb(0, 0, 0);
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  margin-top: 15px;
+}
+.m:hover
+{
+    color:whitesmoke;
+}
+.menu ul li
+{
+    list-style: none;
+    display: inline;
+    margin: 12%;
+}
+.car 
+{
+    margin:2% 0% 2% 2.4%; 
+    width: 700px;
+    height: 350px;
+    display:inline-block;
+}
+.card 
+{
+    position: relative;
+    width: 700px;
+    height: 350px;
+    background: #000;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    display: inline-block;
+}
+.poster 
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.poster::before 
+{
+    position: absolute;
+    bottom: -45%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+}
+.card:hover .poster::before 
+{
+    bottom: 0;
+}
+.poster img 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 1s;
+    
+}
+.card:hover .poster img 
+{
+    transform: scale(1.1);
+    filter: blur(3px);
+}
+.details 
+{
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 35%;
+    padding: 1em 1.5em 2em;
+    background: #000a;
+    backdrop-filter: blur(2px) saturate(120%);
+    transition: 1s;
+    color: #fff;
+    z-index: 1;
+}
+.card:hover .details 
+{
+    bottom: 0;
+}
+.details h1,
+.details h2
+{
+    font-weight: 700;
+}
+.details h1 
+{
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+.details h2 
+{
+    font-weight: 400;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    opacity: .6;
+}
+a
+{
+    text-decoration: none;
+}
+</style>
+</body>
+</html>
